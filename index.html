@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Age calculator app</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="inner-container">
+      <!-- Top container -->
+      <div class="top-container">
+        <div class="day">
+          <label for="day">Day</label>
+          <input type="text" placeholder="DD" name="day" id="day" maxlength="2">
+          <p class="error-para">This field is required</p>
+        </div>
+        <div class="month">
+          <label for="month">Month</label>
+          <input type="text" placeholder="MM" name="month" id="month" maxlength="2">
+          <p class="error-para">This field is required</p>
+        </div>
+        <div class="year">
+          <label for="year">Year</label>
+          <input type="text" placeholder="YYYY" name="year" id="year" maxlength="4">
+          <p class="error-para">This field is required</p>
+        </div>
+      </div>
+      <!-- Middle container -->
+      <div class="middle-container">
+        <span class="line"></span>
+        <span class="circle">
+          <span class="img"></span>
+        </span>
+      </div>
+      <!-- Bottom container -->
+      <div class="bottom-container">
+        <div class="years">
+          <p><span id="years">- -</span> years</p>
+        </div>
+        <div class="months">
+          <p><span id="months">- -</span> months</p>
+        </div>
+        <div class="days">
+          <p><span id="days">- -</span> days</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
